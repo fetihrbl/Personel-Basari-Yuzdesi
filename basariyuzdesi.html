@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>FATİH EMİN ERBİL</title>
+<style>
+#tablobaslik{
+    width: 1100px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #f1f1f1;
+    font-weight: bold;
+    border: 1px solid black;
+}
+#alan{
+    width: 100%;
+    height: 219px;
+    margin: 0 auto;
+    text-align: center;
+}
+.kapsamaalani{
+    position: relative;
+    width: 1100px;
+    height: 175px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.isim{
+    width: 145px;
+    height: 25px;
+    float: left;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.grafik{
+    width: 0px;
+    height: 20px;
+    margin-top: 3.5px;
+    margin-bottom: 5px;
+    float: left;
+}
+.deger{
+    padding-top: 1px;
+    font-weight: bold;
+    text-align: right;
+    color: white;
+}
+</style>
+</head>
+<body>
+<div id="alan">
+    <div id="tablobaslik">Personel Başarı Yüzdesi</div>
+    <div class="kapsamaalani">
+
+        <div id="isim1" class="isim">Mehmet Emin Bezci</div>
+        <div id="grafik1" class="grafik"><div id="deger1" class="deger"></div></div>
+
+        <br/><br/>
+
+        <div id="isim2" class="isim">Mehmet Karagöz</div>
+        <div id="grafik2" class="grafik"><div id="deger2" class="deger"></div></div>
+        
+        <br/><br/>
+        
+        <div id="isim3" class="isim">Fatih Emin Erbil</div>
+        <div id="grafik3" class="grafik"><div id="deger3" class="deger"></div></div>
+
+        <br/><br/>
+        
+        <div id="isim4" class="isim">Fevzi Altın</div>
+        <div id="grafik4" class="grafik"><div id="deger4" class="deger"></div></div>
+
+        <br/><br/>
+        
+        <div id="isim5" class="isim">Mustafa Başarır</div>
+        <div id="grafik5" class="grafik"><div id="deger5" class="deger"></div></div>
+    </div>    
+</div>
+
+<script type="text/javascript" language="javascript">
+    var toplamalan      =   950;
+
+    var grafik1alan     =   document.getElementById("grafik1");
+    var yuzde1          =   95;
+    var hesapla1        =   100 / yuzde1;
+    var piksel1         =   toplamalan / hesapla1;
+    var baslangic1      =   0;
+
+    var zaman1          =   setInterval(function(){
+        if(yuzde1<50){
+            document.getElementById("grafik1").style.backgroundColor = "rgba(249, 64, 31, 0.923)";
+        }else{
+            document.getElementById("grafik1").style.backgroundColor = "rgb(10, 170, 239)";
+        }
+        document.getElementById("grafik1").style.width = baslangic1 + "px";
+        baslangic1      =   baslangic1 + 1;
+        if(baslangic1>=piksel1){
+            document.getElementById("deger1").innerHTML = "%" + yuzde1 + "&nbsp"
+            clearInterval(zaman1);
+        }
+    },1)
+
+    var toplamalan      =   950;
+
+    var grafik2alan     =   document.getElementById("grafik2");
+    var yuzde2          =   90;
+    var hesapla2        =   100 / yuzde2;
+    var piksel2         =   toplamalan / hesapla2;
+    var baslangic2      =   0;
+
+    var zaman2          =   setInterval(function(){
+        if(yuzde2<50){
+            document.getElementById("grafik2").style.backgroundColor = "rgba(249, 64, 31, 0.923)";
+        }else{
+            document.getElementById("grafik2").style.backgroundColor = "rgb(10, 170, 239)";
+        }
+        document.getElementById("grafik2").style.width = baslangic2 + "px";
+        baslangic2      =   baslangic2 + 1;
+        if(baslangic2>=piksel2){
+            document.getElementById("deger2").innerHTML = "%" + yuzde2 + "&nbsp"
+            clearInterval(zaman2);
+        }
+    },1)
+
+    var toplamalan      =   950;
+
+    var grafik3alan     =   document.getElementById("grafik3");
+    var yuzde3          =   70;
+    var hesapla3        =   100 / yuzde3;
+    var piksel3         =   toplamalan / hesapla3;
+    var baslangic3      =   0;
+
+    var zaman3          =   setInterval(function(){
+        if(yuzde3<50){
+            document.getElementById("grafik3").style.backgroundColor = "rgba(249, 64, 31, 0.923)";
+        }else{
+            document.getElementById("grafik3").style.backgroundColor = "rgb(10, 170, 239)";
+        }
+        document.getElementById("grafik3").style.width = baslangic3 + "px";
+        baslangic3      =   baslangic3 + 1;
+        if(baslangic3>=piksel3){
+            document.getElementById("deger3").innerHTML = "%" + yuzde3 + "&nbsp"
+            clearInterval(zaman3);
+        }
+    },1)
+
+    var toplamalan      =   950;
+
+    var grafik4alan     =   document.getElementById("grafik4");
+    var yuzde4          =   30;
+    var hesapla4        =   100 / yuzde4;
+    var piksel4         =   toplamalan / hesapla4;
+    var baslangic4      =   0;
+
+    var zaman4          =   setInterval(function(){
+        if(yuzde4<50){
+            document.getElementById("grafik4").style.backgroundColor = "rgba(249, 64, 31, 0.923)";
+        }else{
+            document.getElementById("grafik4").style.backgroundColor = "rgb(10, 170, 239)";
+        }
+        document.getElementById("grafik4").style.width = baslangic4 + "px";
+        baslangic4      =   baslangic4 + 1;
+        if(baslangic4>=piksel4){
+            document.getElementById("deger4").innerHTML = "%" + yuzde4 + "&nbsp"
+            clearInterval(zaman4);
+        }
+    },1)
+
+    var toplamalan      =   950;
+
+    var grafik5alan     =   document.getElementById("grafik5");
+    var yuzde5          =   5;
+    var hesapla5        =   100 / yuzde5;
+    var piksel5         =   toplamalan / hesapla5;
+    var baslangic5      =   0;
+
+    var zaman5          =   setInterval(function(){
+        if(yuzde5<50){
+            document.getElementById("grafik5").style.backgroundColor = "rgba(249, 64, 31, 0.923)";
+        }else{
+            document.getElementById("grafik5").style.backgroundColor = "rgb(10, 170, 239)";
+        }
+        document.getElementById("grafik5").style.width = baslangic5 + "px";
+        baslangic5      =   baslangic5 + 1;
+        if(baslangic5>=piksel5){
+            document.getElementById("deger5").innerHTML = "%" + yuzde5 + "&nbsp"
+            clearInterval(zaman5);
+        }
+    },1)
+
+
+
+
+
+</script>
+</body>
+</html>
